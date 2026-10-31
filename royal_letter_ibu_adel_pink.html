@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Royal Letter for Ibu Adel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Cinzel:wght@500;600;700&family=Italianno&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --rose:#b94f78;--deep:#793451;--pink:#e9a1ba;--soft:#f8dce6;
+ --cream:#fff8f0;--gold:#c49a62;--ink:#55414a;--shadow:rgba(91,39,61,.22)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:Lora,serif;background:
+ radial-gradient(ellipse at 15% 15%,rgba(255,255,255,.8),transparent 28%),
+ radial-gradient(ellipse at 90% 80%,rgba(255,222,233,.9),transparent 35%),
+ linear-gradient(135deg,#f7dce5,#fbe9e6 48%,#f2cbd9);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.24;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:23px 23px}
+.petal{position:fixed;top:-30px;width:12px;height:18px;border-radius:100% 0 100% 0;background:linear-gradient(135deg,#fff0f4,#d9789b);opacity:.7;z-index:0;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(80px,110vh,0) rotate(500deg)}}
+.scene{position:relative;z-index:1;min-height:100svh;display:grid;place-items:center;padding:34px 16px}
+.intro{width:min(760px,100%);text-align:center}
+.eyebrow{font:600 11px 'Playfair Display',serif;letter-spacing:.34em;text-transform:uppercase;color:#9d6077}
+.intro h1{font:clamp(38px,7vw,66px) 'Great Vibes',cursive;color:var(--deep);font-weight:400;margin:12px 0 4px;text-shadow:0 2px #fff}
+.subtitle{font:italic 15px 'Cormorant Garamond',serif;color:#936579;letter-spacing:.08em}
+.scroll-wrap{position:relative;width:min(590px,94vw);margin:32px auto 20px;perspective:1000px}
+.scroll{position:relative;height:250px;margin:0 30px;border:2px solid #d5ad7c;border-radius:12px;background:linear-gradient(100deg,#e9c99f,#fff5df 14%,#fff9ed 50%,#f5dfbd 88%,#d7b184);box-shadow:0 22px 45px var(--shadow),inset 0 0 25px #d9b98c;transition:all 1s ease;overflow:hidden}
+.scroll:before,.scroll:after{content:"";position:absolute;left:-18px;right:-18px;height:30px;border-radius:50%;background:linear-gradient(90deg,#b98a58,#fff0d6 22%,#f8e5c7 78%,#ad7b4c);border:2px solid #c59a66;box-shadow:0 4px 8px #8d5e4a44}
+.scroll:before{top:-15px}.scroll:after{bottom:-15px}
+.scroll-inner{position:absolute;inset:35px 25px;display:grid;place-items:center;border:1px solid #d8b986;color:#a36d50}
+.scroll-inner .mini-crown{font-size:30px;color:#bd8b54}
+.scroll-inner strong{font:clamp(23px,5vw,38px) 'Great Vibes',cursive;color:#9c5b70;font-weight:400}
+.scroll-inner span{font:italic 14px 'Cormorant Garamond',serif;letter-spacing:.12em}
+.ribbon{position:absolute;z-index:3;left:50%;top:50%;transform:translate(-50%,-50%);width:100%;height:100%;pointer-events:none;transition:opacity .6s,transform .9s}
+.ribbon-band{position:absolute;left:50%;top:0;bottom:0;width:55px;transform:translateX(-50%);background:linear-gradient(90deg,#b94f78,#f6b8ce 35%,#d8759a 70%,#a94169);box-shadow:0 0 13px #8b3e5c55}
+.ribbon-knot{position:absolute;left:50%;top:50%;width:75px;height:54px;transform:translate(-50%,-50%);background:radial-gradient(ellipse at 40% 30%,#ffdce8,#d8759a 70%);border:2px solid #b65b7b;border-radius:48% 48% 42% 42%;box-shadow:0 4px 8px #6b334533}
+.ribbon-knot:before,.ribbon-knot:after{content:"";position:absolute;top:5px;width:52px;height:38px;border:7px solid #d9789c;border-radius:70% 15% 70% 15%;background:linear-gradient(135deg,#ffe4ed,#c75e83);z-index:-1}
+.ribbon-knot:before{right:48px;transform:rotate(20deg)}.ribbon-knot:after{left:48px;transform:scaleX(-1) rotate(20deg)}
+.ribbon-tail{position:absolute;top:58%;left:calc(50% - 9px);width:22px;height:95px;background:linear-gradient(90deg,#b94f78,#f5b8ce,#c65d85);clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%)}
+.ribbon-tail.two{left:calc(50% - 28px);transform:rotate(12deg)}
+.untying .ribbon{opacity:0;transform:translate(-50%,-50%) rotate(18deg) scale(1.4)}
+.unrolling .scroll{height:480px;margin:0 12px}
+.unrolling .scroll-inner{inset:35px 28px}
+.seal{position:absolute;z-index:4;left:50%;top:50%;transform:translate(-50%,-50%);width:68px;height:68px;border-radius:50%;display:grid;place-items:center;color:#ffe8ef;font-size:28px;background:radial-gradient(circle at 35% 25%,#ef9bb8,#a93866 75%);border:3px solid #e7b5c7;box-shadow:0 5px 12px #76344c66;transition:opacity .4s}
+.untying .seal{opacity:0;transform:translate(-50%,-50%) scale(1.5)}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px}
+button{border:1px solid #d8ad7a;background:linear-gradient(135deg,#fff9f2,#f8dce5);color:#82425f;border-radius:999px;padding:13px 25px;font:600 12px 'Playfair Display',serif;letter-spacing:.13em;text-transform:uppercase;box-shadow:0 8px 18px #8d526022;cursor:pointer;transition:.25s}
+button:hover{transform:translateY(-3px);box-shadow:0 12px 24px #8d526044}
+.hint{font:italic 14px 'Cormorant Garamond',serif;color:#986b7c;margin-top:13px}
+#letterStage{display:none;padding:45px 15px 70px}
+.letter{width:min(820px,100%);margin:auto;position:relative;padding:clamp(30px,6vw,72px);background:
+ radial-gradient(circle at 8% 8%,#fce5ec 0 2px,transparent 3px),
+ linear-gradient(135deg,#fffdf9,#fff5f5 52%,#fffaf2);border:1px solid #d6a1ad;
+ box-shadow:0 28px 75px #743b5733;border-radius:3px 34px 3px 34px}
+.letter:before{content:"";position:absolute;inset:14px;border:1px solid #e7c6ca;border-radius:2px 26px 2px 26px;pointer-events:none}
+.letter:after{content:"❀";position:absolute;right:30px;top:25px;color:#d58ca3;font-size:28px;opacity:.8}
+.letter-top{text-align:left;margin:0 0 35px;padding:0 0 24px 22px;position:relative;border-bottom:1px dashed #d9aab7}
+.letter-top .ornament{color:#c28b67;font-size:22px;letter-spacing:.3em}
+.to{font:600 11px 'Cinzel',serif;letter-spacing:.28em;color:#a75e78;text-transform:uppercase;margin-top:18px}
+.letter h2{font:clamp(38px,6vw,56px) 'Italianno',cursive;font-weight:400;color:#a94f72;margin:7px 0 2px}
+.letter-body{position:relative;font:14px/2.05 'Libre Baskerville',serif;color:#59454d;white-space:normal;padding:4px 8px 0 22px}
+.letter-body p{margin:0 0 20px}
+.letter-body p:first-child:first-letter{float:left;font:700 54px/ .82 'Cinzel',serif;color:#b65e7e;padding:7px 9px 0 0}
+.signoff{font:38px 'Italianno',cursive;color:#a34e70;text-align:right;margin-top:30px}
+.from{text-align:right;font:600 11px 'Cinzel',serif;letter-spacing:.28em;color:#a56a7e;text-transform:uppercase}
+.end-note{text-align:center;margin-top:34px;color:#b08478;font:600 10px 'Cinzel',serif;letter-spacing:.12em}
+@media(max-width:520px){.scroll{height:205px}.unrolling .scroll{height:420px}.letter-body{font-size:13px;line-height:2;padding-left:12px}.letter h2{font-size:43px}.letter-top{padding-left:12px}}
+</style>
+</head>
+<body>
+<div id="petals"></div>
+<section class="scene" id="introStage">
+ <div class="intro">
+  <div class="eyebrow">The Rosewood Kingdom • Royal Correspondence</div>
+  <h1>A Message from the Heart</h1>
+  <div class="subtitle">A little letter, wrapped with love</div>
+  <div class="scroll-wrap" id="scrollWrap">
+   <div class="scroll" id="scroll">
+    <div class="scroll-inner">
+     <div class="mini-crown">♕</div>
+     <strong>A Royal Letter</strong>
+     <span>PREPARED WITH LOVE FOR IBU CHE</span>
+    </div>
+   </div>
+   <div class="ribbon" id="ribbon">
+    <div class="ribbon-band"></div><div class="ribbon-tail"></div><div class="ribbon-tail two"></div><div class="ribbon-knot"></div>
+   </div>
+   <div class="seal" id="seal">♛</div>
+  </div>
+  <div class="actions"><button id="untieBtn">Untie the Pink Ribbon</button></div>
+  <div class="hint" id="hint">A royal message is waiting to be discovered…</div>
+ </div>
+</section>
+<section class="scene" id="openStage" style="display:none">
+ <div class="intro">
+  <div class="eyebrow">The Royal Scroll</div>
+  <h1>Let the Story Unfold</h1>
+  <div class="subtitle">The ribbon has been released. Your letter awaits.</div>
+  <div class="scroll-wrap unrolling" id="openScrollWrap">
+   <div class="scroll" style="height:420px;margin:0 12px">
+    <div class="scroll-inner" style="inset:35px 28px">
+     <div class="mini-crown">♕</div>
+     <strong>With love,</strong>
+     <span>FROM SALSA TO IBU CHE</span>
+    </div>
+   </div>
+  </div>
+  <div class="actions"><button id="openLetterBtn">Unroll the Letter</button></div>
+  <div class="hint">One more little step…</div>
+ </div>
+</section>
+<section id="letterStage">
+ <article class="letter">
+  <div class="letter-top">
+   <div class="ornament">✧ ❀ ✧</div>
+   <div class="to">To : Ibu Che</div>
+   <h2>A Letter for You</h2>
+   <div class="ornament">༺ ♕ ༻</div>
+  </div>
+  <div class="letter-body">
+   <p>Halo kakk, apakabarrrr? aku bingung harus memanggil ibu atau kak, kak aja yaa wkwk</p>
+   <p>Maaf yaa kak, aku ngilang, aku tidak berniat untuk menghilangkan diri atau ga bolo² an tapi biasa lagi kumattt, tapi aku okeee kokk kak</p>
+   <p>Sebelumnya selamat yaa kak sudah berjuang sampai di akhir, aku percaya sih kak che tuh bisa lewatin gitu aja dengan chill brow meskipun sambil ngeluh awokawok</p>
+   <p>Gift nya dari aku, maaf yaa kak cuman bisa kasih itu, jyujyur panik tiba² wisuda tidak ada kabarrrr, semoga kak che sukaa yaa soalnya warna pinkkkk josjis</p>
+   <p>gift nya itu jadi satu ya kak, gapapa kan yaa dari sempro, semhas sampai graduation, idk wht do u like, i just know u like pink colour. anyway buat uang nya tuh palsu kakk, soalnya aku ga suka kalau isi nya cuman boneka sama bunga ajaa terlalu biasa. btw rating kak bunga nyaa, itu first trial make flower from pipe cleaner</p>
+   <p>meskipun begitu doain yaa kak semoga aku beneran bisa kasih kak che uang yg sebanyakkkk ituu, terimakasih juga kak atas ilmu, pengalamannya dan semuanya nya di aku, bimbingannya juga padahal aku baru tapi kakak sabar banget sama kak adel ngehadapin aku yg suka jadi kek setan</p>
+   <p>so, buat kak che semoga panjang umur kak, sehat selalu, selalu berbahagia, rezeki nya lancar jayaa, semoga setiap hal baik yg kak che doakan dan lakukan bisa kembali ke kak che. OH SAMA SEMOGA KAK CHE DAPAT KERJA YG UANG NYA BANYAK, NYAMAN LINGKUNGANNYA, ENAK KERJA NYA DLL. WYATB</p>
+   <p>See u on top kakk, have a nice day, good luck, and don't send me long text kak, lagi blunder pasti ga kebales, maap wkwk. But yeah my pleasure</p>
+  </div>
+  <div class="signoff">With love,</div>
+  <div class="from">Salsa</div>
+  <div class="end-note">✦ Sealed with love in the Rosewood Kingdom ✦</div>
+ </article>
+</section>
+<script>
+const petals=document.getElementById('petals');
+for(let i=0;i<22;i++){const p=document.createElement('i');p.className='petal';p.style.left=(Math.random()*100)+'%';p.style.animationDuration=(9+Math.random()*13)+'s';p.style.animationDelay=(-Math.random()*18)+'s';p.style.transform='scale('+(0.55+Math.random()*.8)+')';petals.appendChild(p)}
+const wrap=document.getElementById('scrollWrap');
+document.getElementById('untieBtn').addEventListener('click',()=>{
+ wrap.classList.add('untying');
+ document.getElementById('hint').textContent='The pink ribbon has been gently untied…';
+ setTimeout(()=>{document.getElementById('introStage').style.display='none';document.getElementById('openStage').style.display='grid';window.scrollTo(0,0)},850);
+});
+document.getElementById('openLetterBtn').addEventListener('click',()=>{
+ document.getElementById('openScrollWrap').classList.add('unrolling');
+ document.getElementById('openStage').style.opacity='0';
+ setTimeout(()=>{document.getElementById('openStage').style.display='none';const s=document.getElementById('letterStage');s.style.display='block';s.style.opacity='0';s.style.transition='opacity 1.2s';requestAnimationFrame(()=>s.style.opacity='1');window.scrollTo(0,0)},850);
+});
+</script>
+</body>
+</html>
